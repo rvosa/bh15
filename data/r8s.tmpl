@@ -1,0 +1,10 @@
+[% project.to_nexus('-make_translate',0) %]
+begin r8s;
+	blformat lengths=persite nsites=[% nchar %] ultrametric=no;
+	[% FOREACH f IN fossils %]
+		constrain taxon=[% f.calibrated_taxon %] min_age=[% f.min_age %] max_age=[% f.max_age %];
+	[% END %]
+	set smoothing=100;
+	divtime method=pl;
+	describe plot=rato_description;
+end;
