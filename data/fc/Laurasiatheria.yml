@@ -1,0 +1,65 @@
+---
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Laurasiatheria '
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 164.6
+  MinAge: 61.6
+  NFos: 255
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Chiroptera
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 58.9
+  MinAge: 45
+  NFos: 131
+  NUsrcrFos: 'Phillips, M.J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Lipotyphla
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 164.6
+  MinAge: 61.6
+  NFos: 256
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Carnivora '
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 66
+  MinAge: 37.3
+  NFos: 257
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Artiodactyla
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 66
+  MinAge: 52.4
+  NFos: 258
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Whippomorpha - Ruminantia '
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 66
+  MinAge: 52.4
+  NFos: 259
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Cetacea
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 56
+  MinAge: 33.9
+  NFos: 260
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Bovinae-Antilopinae '
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 28.1
+  MinAge: 16
+  NFos: 261
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'

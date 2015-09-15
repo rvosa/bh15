@@ -1,0 +1,17 @@
+---
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Marsupialia
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 131.3
+  MinAge: 47.6
+  NFos: 246
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Macropodoidea
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 54.65
+  MinAge: 15.97
+  NFos: 129
+  NUsrcrFos: 'Phillips, M.J.'

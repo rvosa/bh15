@@ -1,0 +1,9 @@
+---
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Lipotyphla
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 164.6
+  MinAge: 61.6
+  NFos: 256
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'

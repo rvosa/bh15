@@ -1,0 +1,33 @@
+---
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Hominoidea
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 33.9
+  MinAge: 11.6
+  NFos: 273
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Hominidae
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 33.9
+  MinAge: 11.6
+  NFos: 274
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Chimpanzee-Human '
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 10
+  MinAge: 6.5
+  NFos: 275
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Humanity
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 1
+  MinAge: 0.2
+  NFos: 277
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'

@@ -1,0 +1,49 @@
+---
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Glires
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 164.6
+  MinAge: 56
+  NFos: 263
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Caviomorpha-Phiomorpha
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 56
+  MinAge: 40.94
+  NFos: 179
+  NUsrcrFos: 'Phillips, M.J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Lagomorpha
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 66
+  MinAge: 47.6
+  NFos: 264
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Rodentia
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 66
+  MinAge: 56
+  NFos: 265
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Muroidea + Ctenohystrica
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 59.2
+  MinAge: 47.6
+  NFos: 266
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Mus - Rattus'
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 14
+  MinAge: 10.4
+  NFos: 267
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'

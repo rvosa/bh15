@@ -1,0 +1,25 @@
+---
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Afrotheria
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 164.6
+  MinAge: 56
+  NFos: 251
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Proboscidea
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 23.03
+  MinAge: 5.33
+  NFos: 252
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Sirenia
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 66
+  MinAge: 47.6
+  NFos: 253
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'

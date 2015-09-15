@@ -1,0 +1,369 @@
+---
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Reptilia
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 295.9
+  MinAge: 255.9
+  NFos: 235
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Coracioidea
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 51.57
+  NFos: 278
+  NUsrcrFos: 'Ksepka, D.T. and Clarke, J.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Apodidae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 51
+  NFos: 279
+  NUsrcrFos: 'Ksepka, D.T. and Clarke, J.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Coliiformes
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 56.22
+  NFos: 280
+  NUsrcrFos: 'Ksepka, D.T. and Clarke, J.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Psittaciformes
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 53.5
+  NFos: 281
+  NUsrcrFos: 'Ksepka, D.T. and Clarke, J.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Upupiformes '
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 46.6
+  NFos: 282
+  NUsrcrFos: 'Ksepka, D.T. and Clarke, J.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Sphenisciformes
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 60.5
+  NFos: 122
+  NUsrcrFos: 'Ksepka, D.T. and Clarke, J.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Diapsida
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 295.9
+  MinAge: 255.9
+  NFos: 236
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Archosauria
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 260.2
+  MinAge: 247.1
+  NFos: 237
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Lepidosauria
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 252.7
+  MinAge: 238
+  NFos: 238
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Squamata
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 209.5
+  MinAge: 168.9
+  NFos: 239
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Neornithes
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 86.8
+  MinAge: 66
+  NFos: 240
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Anatoidea (Anatidae - Anseranatidae)'
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 66.5
+  NFos: 123
+  NUsrcrFos: 'Ksepka, D.T. and Clarke, J.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Neognathae
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 86.8
+  MinAge: 66
+  NFos: 241
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Neoaves
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 86.8
+  MinAge: 60.2
+  NFos: 242
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Palaeognathae
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 86.8
+  MinAge: 56.8
+  NFos: 243
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Burhinidae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 23.03
+  NFos: 169
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Jacanidae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 30
+  NFos: 170
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Cepphus carbo - other Cepphus'
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 6.7
+  NFos: 134
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Alca torda
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 7.3
+  NFos: 167
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Fratecula arctica
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 4.2
+  NFos: 127
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Alcidae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 34.2
+  NFos: 133
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Uria - Alle'
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 15.97
+  NFos: 175
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Charadrii
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 41.3
+  NFos: 126
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Laromorphae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 23.6
+  NFos: 173
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Synthliboramphus craveri - S. hypoleucus'
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 1.5
+  NFos: 135
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Turnicidae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 30
+  NFos: 172
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Calidridinae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 11.62
+  NFos: 171
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Uria
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 2.6
+  NFos: 161
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Charadriiformes
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 46.5
+  NFos: 168
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Fraterculinae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 6.7
+  NFos: 128
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Brachyramphus marmoratus - B. brevirostris'
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 1.5
+  NFos: 174
+  NUsrcrFos: 'Smith, N.A.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Testudines
+  CrownvsStem: crown
+  DcrFos: 2013
+  MaxAge: 251.4
+  MinAge: 155.6
+  NFos: 244
+  NUsrcrFos: 'Joyce, W.G., Parham, J.F., Lyson, T.R., Warnock, R.C.M., Donoghue, P.C.J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Phaethontes
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 56
+  NFos: 307
+  NUsrcrFos: 'Smith, N.D and D.T. Ksepka.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Threskiornithidae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 53.9
+  MinAge: 0
+  NFos: 308
+  NUsrcrFos: 'Smith, N.D and D.T. Ksepka.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Pelecanidae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 28.1
+  NFos: 309
+  NUsrcrFos: 'Smith, N.D and D.T. Ksepka.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Fregatidae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 51.81
+  NFos: 310
+  NUsrcrFos: 'Smith, N.D and D.T. Ksepka.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Phalacrocoracidae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 24.52
+  MinAge: 0
+  NFos: 311
+  NUsrcrFos: 'Smith, N.D and D.T. Ksepka.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Serpentes
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 113
+  MinAge: 98.32
+  NFos: 312
+  NUsrcrFos: 'Head, J.J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Aniliidae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 72.1
+  NFos: 314
+  NUsrcrFos: 'Head, J.J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Boinae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 64
+  MinAge: 58
+  NFos: 315
+  NUsrcrFos: 'Head, J.J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Eunectes
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 12.375
+  NFos: 318
+  NUsrcrFos: 'Head, J.J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Charinidae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 35.2
+  NFos: 319
+  NUsrcrFos: 'Head, J.J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Charininae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 18.7
+  NFos: 320
+  NUsrcrFos: 'Head, J.J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Loxocemidae
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 35.2
+  NFos: 321
+  NUsrcrFos: 'Head, J.J.'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Morelia
+  CrownvsStem: stem
+  DcrFos: 2015
+  MaxAge: 0
+  MinAge: 12.5
+  NFos: 323
+  NUsrcrFos: 'Head, J.J.'
