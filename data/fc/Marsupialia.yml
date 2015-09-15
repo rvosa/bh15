@@ -7,6 +7,20 @@
   MinAge: 47.6
   NFos: 246
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: QM
+      collectionNumber: F52748
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 150
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Macropodoidea
   CrownvsStem: crown
@@ -15,3 +29,17 @@
   MinAge: 15.97
   NFos: 129
   NUsrcrFos: 'Phillips, M.J.'
+  fossils:
+    - collection: QM
+      collectionNumber: 19915
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 104
+      locationRelativeToNode: 2
+      maxAge: 54.65
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 15.97
+      minAgeType: 2
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Zone B

@@ -7,6 +7,20 @@
   MinAge: 61.6
   NFos: 248
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: UALVP
+      collectionNumber: 31175
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 87
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Ravenscrag Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Atlantogenata
   CrownvsStem: crown
@@ -15,6 +29,20 @@
   MinAge: 56
   NFos: 249
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: MNHNFr
+      collectionNumber: PM69
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 152
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'phosphate bed IIa, lower bone-bed, Ouled Abdoun Ba'
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Boreotheria
   CrownvsStem: crown
@@ -23,6 +51,20 @@
   MinAge: 61.6
   NFos: 254
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: UALVP
+      collectionNumber: 31175
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 87
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Ravenscrag Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Caviomorpha-Phiomorpha
   CrownvsStem: crown
@@ -31,6 +73,20 @@
   MinAge: 40.94
   NFos: 179
   NUsrcrFos: 'Phillips, M.J.'
+  fossils:
+    - collection: MUSM
+      collectionNumber: 1871
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 105
+      locationRelativeToNode: 2
+      maxAge: 56
+      maxAgeType: 2
+      maxAgeTypeDetails: ''
+      minAge: 40.94
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Chiroptera
   CrownvsStem: crown
@@ -39,6 +95,20 @@
   MinAge: 45
   NFos: 131
   NUsrcrFos: 'Phillips, M.J.'
+  fossils:
+    - collection: TNM
+      collectionNumber: MP-207
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 67
+      locationRelativeToNode: 2
+      maxAge: 58.9
+      maxAgeType: 2
+      maxAgeTypeDetails: ''
+      minAge: 45
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Mahenge sequence
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Xenarthra
   CrownvsStem: crown
@@ -47,6 +117,20 @@
   MinAge: 47.6
   NFos: 250
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: MCN
+      collectionNumber: PV 1774
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 153
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Afrotheria
   CrownvsStem: crown
@@ -55,6 +139,20 @@
   MinAge: 56
   NFos: 251
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: MNHNFr
+      collectionNumber: PM69
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 152
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'phosphate bed IIa, lower bone-bed, Ouled Abdoun Ba'
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Proboscidea
   CrownvsStem: crown
@@ -63,6 +161,20 @@
   MinAge: 5.33
   NFos: 252
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: KNM
+      collectionNumber: LU 916
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 154
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'Lukeino Formation '
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: 'Laurasiatheria '
   CrownvsStem: crown
@@ -71,6 +183,20 @@
   MinAge: 61.6
   NFos: 255
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: UALVP
+      collectionNumber: 31175
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 87
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Ravenscrag Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Lipotyphla
   CrownvsStem: crown
@@ -79,6 +205,20 @@
   MinAge: 61.6
   NFos: 256
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: USNM
+      collectionNumber: 9640
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 156
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Fort Union Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: 'Carnivora '
   CrownvsStem: crown
@@ -87,6 +227,20 @@
   MinAge: 37.3
   NFos: 257
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: SMNH(c)
+      collectionNumber: P1899.6
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 157
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Artiodactyla
   CrownvsStem: crown
@@ -95,6 +249,20 @@
   MinAge: 52.4
   NFos: 258
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: RUSB
+      collectionNumber: 2003
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 158
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: 'Whippomorpha - Ruminantia '
   CrownvsStem: crown
@@ -103,6 +271,20 @@
   MinAge: 52.4
   NFos: 259
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: RUSB
+      collectionNumber: 2003
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 158
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Cetacea
   CrownvsStem: crown
@@ -111,6 +293,20 @@
   MinAge: 33.9
   NFos: 260
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: USNM
+      collectionNumber: 183022
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 159
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: La Meseta Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: 'Bovinae-Antilopinae '
   CrownvsStem: crown
@@ -119,6 +315,20 @@
   MinAge: 16
   NFos: 261
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: Joanneum
+      collectionNumber: 3678
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 185
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Euarchontoglires
   CrownvsStem: crown
@@ -127,6 +337,20 @@
   MinAge: 64.6
   NFos: 262
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: UCMP
+      collectionNumber: 189520
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 160
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Glires
   CrownvsStem: crown
@@ -135,6 +359,20 @@
   MinAge: 56
   NFos: 263
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: IVPP
+      collectionNumber: V4377
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 161
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Wanghudun Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Lagomorpha
   CrownvsStem: crown
@@ -143,6 +381,20 @@
   MinAge: 47.6
   NFos: 264
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: GU/RSR/V
+      collectionNumber: 711
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 162
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Cambay Shale
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Rodentia
   CrownvsStem: crown
@@ -151,6 +403,20 @@
   MinAge: 56
   NFos: 265
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: YPM
+      collectionNumber: PU 14200
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 163
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Fort Union Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Muroidea + Ctenohystrica
   CrownvsStem: crown
@@ -159,6 +425,20 @@
   MinAge: 47.6
   NFos: 266
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: H-GSP
+      collectionNumber: 92161
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 164
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Kuldana Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: 'Mus - Rattus'
   CrownvsStem: crown
@@ -167,6 +447,20 @@
   MinAge: 10.4
   NFos: 267
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: YGSP
+      collectionNumber: 7720
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 165
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Dhok Pathan Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Archonta
   CrownvsStem: crown
@@ -175,6 +469,20 @@
   MinAge: 61.6
   NFos: 268
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: UCMP
+      collectionNumber: 189520
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 160
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Primates
   CrownvsStem: crown
@@ -183,6 +491,20 @@
   MinAge: 56
   NFos: 269
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: MNHNFr
+      collectionNumber: THR 141
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 166
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Strepsirhini
   CrownvsStem: crown
@@ -191,6 +513,20 @@
   MinAge: 33.9
   NFos: 270
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: CGM
+      collectionNumber: 40265
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 167
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'Birket Quarun Formation '
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Anthropoidea
   CrownvsStem: crown
@@ -199,6 +535,20 @@
   MinAge: 33.9
   NFos: 271
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: DPC
+      collectionNumber: 8701
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 168
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'Birket Quarun Formation '
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Catarrhini
   CrownvsStem: crown
@@ -207,6 +557,20 @@
   MinAge: 24.44
   NFos: 272
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: RRBP
+      collectionNumber: 12444A
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 169
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Nsungwe Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Hominoidea
   CrownvsStem: crown
@@ -215,6 +579,20 @@
   MinAge: 11.6
   NFos: 273
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: GSP
+      collectionNumber: Y-16075
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 170
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'Chinji Formation '
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Hominidae
   CrownvsStem: crown
@@ -223,6 +601,20 @@
   MinAge: 11.6
   NFos: 274
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: GSP
+      collectionNumber: Y-16075
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 170
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'Chinji Formation '
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: 'Chimpanzee-Human '
   CrownvsStem: crown
@@ -231,6 +623,20 @@
   MinAge: 6.5
   NFos: 275
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: CNAR
+      collectionNumber: TM 266-01-060-1
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 171
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Sahelanthropus beds
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Humanity
   CrownvsStem: crown
@@ -239,6 +645,20 @@
   MinAge: 0.2
   NFos: 277
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: BSV
+      collectionNumber: 1
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 186
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Sirenia
   CrownvsStem: crown
@@ -247,3 +667,17 @@
   MinAge: 47.6
   NFos: 253
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: NHMUK
+      collectionNumber: 46722
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 155
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''

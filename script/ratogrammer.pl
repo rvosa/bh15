@@ -82,6 +82,7 @@ $tree->visit_depth_first(
 				$log->info("fetching fossils for $name");
 				my @records = $cs->fetch_fossil_dates( $name );
 				open my $fh, '>', $file or die $!;
+				binmode( $fh, ':utf8' );
 				print $fh Dump(\@records);
 				close $fh;
 				

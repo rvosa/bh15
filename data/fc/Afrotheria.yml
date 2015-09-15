@@ -7,6 +7,20 @@
   MinAge: 56
   NFos: 251
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: MNHNFr
+      collectionNumber: PM69
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 152
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'phosphate bed IIa, lower bone-bed, Ouled Abdoun Ba'
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Proboscidea
   CrownvsStem: crown
@@ -15,6 +29,20 @@
   MinAge: 5.33
   NFos: 252
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: KNM
+      collectionNumber: LU 916
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 154
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'Lukeino Formation '
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Sirenia
   CrownvsStem: crown
@@ -23,3 +51,17 @@
   MinAge: 47.6
   NFos: 253
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: NHMUK
+      collectionNumber: 46722
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 155
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''

@@ -7,3 +7,17 @@
   MinAge: 47.6
   NFos: 264
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: GU/RSR/V
+      collectionNumber: 711
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 162
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Cambay Shale

@@ -7,3 +7,17 @@
   MinAge: 45
   NFos: 131
   NUsrcrFos: 'Phillips, M.J.'
+  fossils:
+    - collection: TNM
+      collectionNumber: MP-207
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 67
+      locationRelativeToNode: 2
+      maxAge: 58.9
+      maxAgeType: 2
+      maxAgeTypeDetails: ''
+      minAge: 45
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Mahenge sequence

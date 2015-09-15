@@ -7,6 +7,20 @@
   MinAge: 56
   NFos: 263
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: IVPP
+      collectionNumber: V4377
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 161
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Wanghudun Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Caviomorpha-Phiomorpha
   CrownvsStem: crown
@@ -15,6 +29,20 @@
   MinAge: 40.94
   NFos: 179
   NUsrcrFos: 'Phillips, M.J.'
+  fossils:
+    - collection: MUSM
+      collectionNumber: 1871
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 105
+      locationRelativeToNode: 2
+      maxAge: 56
+      maxAgeType: 2
+      maxAgeTypeDetails: ''
+      minAge: 40.94
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Lagomorpha
   CrownvsStem: crown
@@ -23,6 +51,20 @@
   MinAge: 47.6
   NFos: 264
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: GU/RSR/V
+      collectionNumber: 711
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 162
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Cambay Shale
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Rodentia
   CrownvsStem: crown
@@ -31,6 +73,20 @@
   MinAge: 56
   NFos: 265
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: YPM
+      collectionNumber: PU 14200
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 163
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Fort Union Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Muroidea + Ctenohystrica
   CrownvsStem: crown
@@ -39,6 +95,20 @@
   MinAge: 47.6
   NFos: 266
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: H-GSP
+      collectionNumber: 92161
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 164
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Kuldana Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: 'Mus - Rattus'
   CrownvsStem: crown
@@ -47,3 +117,17 @@
   MinAge: 10.4
   NFos: 267
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: YGSP
+      collectionNumber: 7720
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 165
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Dhok Pathan Formation

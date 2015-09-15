@@ -7,6 +7,20 @@
   MinAge: 56.22
   NFos: 280
   NUsrcrFos: 'Ksepka, D.T. and Clarke, J.A.'
+  fossils:
+    - collection: USNM
+      collectionNumber: 433912
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 182
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Sand Coulee beds of the Willwood Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Psittaciformes
   CrownvsStem: stem
@@ -15,6 +29,20 @@
   MinAge: 53.5
   NFos: 281
   NUsrcrFos: 'Ksepka, D.T. and Clarke, J.A.'
+  fossils:
+    - collection: NHMUK
+      collectionNumber: A6207
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 61
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'Walton Member (Division A2 of King, 1981) of the L'
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: 'Upupiformes '
   CrownvsStem: stem
@@ -23,6 +51,20 @@
   MinAge: 46.6
   NFos: 282
   NUsrcrFos: 'Ksepka, D.T. and Clarke, J.A.'
+  fossils:
+    - collection: SMF
+      collectionNumber: ME-1883a+b
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 183
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Messel Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Sphenisciformes
   CrownvsStem: stem
@@ -31,6 +73,20 @@
   MinAge: 60.5
   NFos: 122
   NUsrcrFos: 'Ksepka, D.T. and Clarke, J.A.'
+  fossils:
+    - collection: CM
+      collectionNumber: zfa35
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 58
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Waipara Greensand
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Neognathae
   CrownvsStem: crown
@@ -39,6 +95,20 @@
   MinAge: 66
   NFos: 241
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: MLP
+      collectionNumber: 93-I-3-1
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 146
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Sandwich Bluff Member of the Lopez de Bertodano Fo
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Neoaves
   CrownvsStem: crown
@@ -47,6 +117,20 @@
   MinAge: 60.2
   NFos: 242
   NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: CM
+      collectionNumber: zfa35
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 58
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Waipara Greensand
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Turnicidae
   CrownvsStem: stem
@@ -55,6 +139,20 @@
   MinAge: 30
   NFos: 172
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: SMF
+      collectionNumber: Av 506a+b
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 100
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 30
+      minAgeType: 2
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Frauenweiler Clay
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Charadriiformes
   CrownvsStem: stem
@@ -63,6 +161,20 @@
   MinAge: 46.5
   NFos: 168
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: SMF
+      collectionNumber: ME 2458A+B
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 96
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 46.5
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Messel Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Pelecanidae
   CrownvsStem: stem
@@ -71,6 +183,20 @@
   MinAge: 28.1
   NFos: 309
   NUsrcrFos: 'Smith, N.D and D.T. Ksepka.'
+  fossils:
+    - collection: NT-LBR
+      collectionNumber: 039
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 201
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Coracioidea
   CrownvsStem: stem
@@ -79,6 +205,20 @@
   MinAge: 51.57
   NFos: 278
   NUsrcrFos: 'Ksepka, D.T. and Clarke, J.A.'
+  fossils:
+    - collection: USNM
+      collectionNumber: 336484
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 180
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Fossil Butte Member
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Apodidae
   CrownvsStem: stem
@@ -87,6 +227,20 @@
   MinAge: 51
   NFos: 279
   NUsrcrFos: 'Ksepka, D.T. and Clarke, J.A.'
+  fossils:
+    - collection: NHMUK
+      collectionNumber: A5430
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 181
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'Bed R6 of the Røsnæs Clay Formation '
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: 'Anatoidea (Anatidae - Anseranatidae)'
   CrownvsStem: crown
@@ -95,6 +249,20 @@
   MinAge: 66.5
   NFos: 123
   NUsrcrFos: 'Ksepka, D.T. and Clarke, J.A.'
+  fossils:
+    - collection: MLP
+      collectionNumber: 93-I-3-1
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 146
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Sandwich Bluff Member of the Lopez de Bertodano Fo
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Burhinidae
   CrownvsStem: stem
@@ -103,6 +271,20 @@
   MinAge: 23.03
   NFos: 169
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: NHB
+      collectionNumber: Cod. 1258
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 97
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 23.03
+      minAgeType: 2
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Jacanidae
   CrownvsStem: stem
@@ -111,6 +293,20 @@
   MinAge: 30
   NFos: 170
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: DPC
+      collectionNumber: 3848
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 98
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 30
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Jebel Qatrani Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: 'Cepphus carbo - other Cepphus'
   CrownvsStem: crown
@@ -119,6 +315,20 @@
   MinAge: 6.7
   NFos: 134
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: LACM
+      collectionNumber: 107032
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 70
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 6.7
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: peat soils
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Alca torda
   CrownvsStem: stem
@@ -127,6 +337,20 @@
   MinAge: 7.3
   NFos: 167
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: USNM
+      collectionNumber: 237157
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 95
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 2
+      maxAgeTypeDetails: ''
+      minAge: 7.3
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: St. Mary's Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Fratecula arctica
   CrownvsStem: stem
@@ -135,6 +359,20 @@
   MinAge: 4.2
   NFos: 127
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: USNM
+      collectionNumber: 490887
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 63
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 4.2
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'Yorktown Formation '
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Alcidae
   CrownvsStem: stem
@@ -143,6 +381,20 @@
   MinAge: 34.2
   NFos: 133
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: GCVP
+      collectionNumber: 5690
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 69
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 34.2
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Clinchfield Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: 'Uria - Alle'
   CrownvsStem: crown
@@ -151,6 +403,20 @@
   MinAge: 15.97
   NFos: 175
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: USNM
+      collectionNumber: 237142
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 103
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 15.97
+      minAgeType: 2
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Calvert Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Charadrii
   CrownvsStem: stem
@@ -159,6 +425,20 @@
   MinAge: 41.3
   NFos: 126
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: IVPP
+      collectionNumber: V.8323
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 62
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 41.3
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Huadian Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Laromorphae
   CrownvsStem: stem
@@ -167,6 +447,20 @@
   MinAge: 23.6
   NFos: 173
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: MNHNFr
+      collectionNumber: Av.4134
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 101
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 23.6
+      minAgeType: 2
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Saint-Gérand-le-Puy
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: 'Synthliboramphus craveri - S. hypoleucus'
   CrownvsStem: crown
@@ -175,6 +469,20 @@
   MinAge: 1.5
   NFos: 135
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: UCMP
+      collectionNumber: 61590
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 71
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 1.5
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: San Diego Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Calidridinae
   CrownvsStem: stem
@@ -183,6 +491,20 @@
   MinAge: 11.62
   NFos: 171
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: Steinber
+      collectionNumber: 1970 XVIII
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 99
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 11.62
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Nördlinger Ries
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Uria
   CrownvsStem: crown
@@ -191,6 +513,20 @@
   MinAge: 2.6
   NFos: 161
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: CASG
+      collectionNumber: 71892
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 89
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Fraterculinae
   CrownvsStem: stem
@@ -199,6 +535,20 @@
   MinAge: 6.7
   NFos: 128
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: LACM
+      collectionNumber: 107031
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 64
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 6.7
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'San Mateo Formation '
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: 'Brachyramphus marmoratus - B. brevirostris'
   CrownvsStem: crown
@@ -207,6 +557,20 @@
   MinAge: 1.5
   NFos: 174
   NUsrcrFos: 'Smith, N.A.'
+  fossils:
+    - collection: SDSNH
+      collectionNumber: 24573
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 102
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: San Diego Formation
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Phaethontes
   CrownvsStem: stem
@@ -215,6 +579,20 @@
   MinAge: 56
   NFos: 307
   NUsrcrFos: 'Smith, N.D and D.T. Ksepka.'
+  fossils:
+    - collection: OCP.DEK/
+      collectionNumber: 1087
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 199
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Bed IIa
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Threskiornithidae
   CrownvsStem: stem
@@ -223,6 +601,20 @@
   MinAge: 0
   NFos: 308
   NUsrcrFos: 'Smith, N.D and D.T. Ksepka.'
+  fossils:
+    - collection: MGUH
+      collectionNumber: 20288
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 200
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Fregatidae
   CrownvsStem: stem
@@ -231,6 +623,20 @@
   MinAge: 51.81
   NFos: 310
   NUsrcrFos: 'Smith, N.D and D.T. Ksepka.'
+  fossils:
+    - collection: USNM
+      collectionNumber: 22753
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 92
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Fossil Butte Member
 - !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
   CalibratedTaxon: Phalacrocoracidae
   CrownvsStem: stem
@@ -239,3 +645,17 @@
   MinAge: 0
   NFos: 311
   NUsrcrFos: 'Smith, N.D and D.T. Ksepka.'
+  fossils:
+    - collection: PW
+      collectionNumber: 2005/5022-LS
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 202
+      locationRelativeToNode: 1
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
