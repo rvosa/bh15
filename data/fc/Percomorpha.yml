@@ -1,0 +1,133 @@
+---
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Oryzias, Cichlidae – Gasterosteus, Takifugu, Tet'
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 130.8
+  MinAge: 69.71
+  NFos: 219
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: MCSNV
+      collectionNumber: 1377
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 131
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Calcari Melissano
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Oryzias – Cichlidae
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 130.8
+  MinAge: 49.11
+  NFos: 220
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: MGUP
+      collectionNumber: 8866
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 132
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: "'Calcari nummulitici’ "
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Gasterosteus - Tetraodon, Takifugu '
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 130.6
+  MinAge: 69.71
+  NFos: 222
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: MCSNV
+      collectionNumber: 1377
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 131
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Calcari Melissano
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Cichlidae
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 100.5
+  MinAge: 45.46
+  NFos: 221
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: NMT
+      collectionNumber: 'WM 339/96a,b'
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 133
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Mahenge crater
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Gasterosteidae
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 33.9
+  MinAge: 13.1
+  NFos: 223
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: LACM
+      collectionNumber: 150177
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 134
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'Alta Mira Shale, Monterey Formation'
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Tetraodon - Takifugu'
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 56
+  MinAge: 32.02
+  NFos: 226
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: PIN
+      collectionNumber: 3363/111+111a
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 179
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Pshekhsky Horizon of the lower Maikop Formation

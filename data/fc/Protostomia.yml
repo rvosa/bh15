@@ -1,0 +1,155 @@
+---
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Protostomia
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 636.1
+  MinAge: 550.25
+  NFos: 184
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: PIN
+      collectionNumber: 3993/4003
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 109
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Ecdysozoa
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 636.1
+  MinAge: 528.82
+  NFos: 185
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: GSC
+      collectionNumber: 85983
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 110
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'Member 2, Chapel Island Formation '
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Arthropoda
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 636.1
+  MinAge: 514
+  NFos: 187
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: YKLP
+      collectionNumber: 10840
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 108
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Yu’anshan Formation
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Lophotrochozoa
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 636.1
+  MinAge: 550.25
+  NFos: 188
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: PIN
+      collectionNumber: 3993/4003
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 109
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Mollusca
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 549
+  MinAge: 532
+  NFos: 189
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: TU
+      collectionNumber: YXII02-02
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 111
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Annelida
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 636.1
+  MinAge: 476.5
+  NFos: 193
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: GIT
+      collectionNumber: 424–19
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 112
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: ''
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: Lobopodia
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 636.1
+  MinAge: 528.82
+  NFos: 186
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: GSC
+      collectionNumber: 85983
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 110
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: 'Member 2, Chapel Island Formation '

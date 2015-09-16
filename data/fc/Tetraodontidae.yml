@@ -1,0 +1,23 @@
+---
+- !!perl/hash:Bio::Phylo::PhyLoTA::Domain::FossilData
+  CalibratedTaxon: 'Tetraodon - Takifugu'
+  CrownvsStem: crown
+  DcrFos: 2015
+  MaxAge: 56
+  MinAge: 32.02
+  NFos: 226
+  NUsrcrFos: 'Benton, M.J., Donoghue, P.C.J., Asher, R.A., Friedman, M., Near, T.J., and Vinther, J.'
+  fossils:
+    - collection: PIN
+      collectionNumber: 3363/111+111a
+      fullReference: '1999 Geological Time Scale, The Geological Society of America. Product code CTS004.  Compilers: A. R. Palmer and J. Geissman.'
+      id: 179
+      locationRelativeToNode: 2
+      maxAge: 0
+      maxAgeType: 1
+      maxAgeTypeDetails: ''
+      minAge: 0
+      minAgeType: 1
+      minAgeTypeDetails: ''
+      shortReference: GSA 1999
+      stratUnit: Pshekhsky Horizon of the lower Maikop Formation
