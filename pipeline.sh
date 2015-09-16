@@ -1,7 +1,16 @@
 #!/bin/bash
 
+# directory for treefam files
+TREEFAM=data/treefam
+
+# data dump
+TFDUMP=$TREEFAM/treefam_family_data.tar.gz
+
+# extract and pre-process trees and alignments from treefam
+perl script/treefammer.pl -i $TFDUMP -t $TREEFAM -v
+
 # list of input trees from treefam
-INTREES=`ls data/treefam/*.nhx.emf`
+INTREES=`ls $TREEFAM/*.nhx.emf`
 
 # directory to read/write fossils
 FOSSILS=data/fc/
@@ -16,6 +25,6 @@ R8S=deps/dist/r8s
 TMPL=data/r8s.tmpl
 
 # iterate over input trees
-for INTREE in $INTREES; do
-	perl script/ratogrammer.pl -f $FOSSILS -r $RATOS -e $R8S -t $TMPL -v -i $INTREE
-done
+#for INTREE in $INTREES; do
+#	perl script/ratogrammer.pl -f $FOSSILS -r $RATOS -e $R8S -t $TMPL -v -i $INTREE
+#done
