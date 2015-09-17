@@ -4,7 +4,9 @@ use warnings;
 use YAML;
 use Template;
 use Getopt::Long;
+use List::Util 'sum';
 use File::Temp 'tempfile';
+use Statistics::Descriptive;
 use Bio::Phylo::IO 'parse';
 use Bio::Phylo::Util::Logger ':levels';
 use Bio::Phylo::Util::CONSTANT ':objecttypes';
@@ -17,6 +19,7 @@ my $exe = 'r8s';      # r8s executable
 my $verbosity = WARN; # log level
 my $template;         # template to generate r8s infile
 my $ratodir;          # output directory for ratograms
+my $dev = 8.0;        # stdev * $dev for outliers
 GetOptions(
 	'fcdir=s'    => \$fcdir,
 	'intree=s'   => \$intree,
@@ -24,6 +27,7 @@ GetOptions(
 	'template=s' => \$template,
 	'verbose+'   => \$verbosity,
 	'ratodir=s'  => \$ratodir,
+	'dev=f'      => \$dev,
 );
 
 # instantiate helper objects
@@ -70,40 +74,40 @@ sub get_nchar {
 # read input tree file
 sub read_data {
 	my $intree = shift;
-	
-	# lookup to go from ensembl ID prefixes to taxon names
-	my %lookup;
-	while(<DATA>) {
-		chomp;
-		my ( $code, $species ) = split /\t/, $_;
-		$lookup{$code} = $species;
-	}	
 
 	# parse the tree
 	$log->info("going to read $intree");
 	my $project = parse(
-		'-format'     => 'newick',
+		'-format'     => 'nhx',
 		'-file'       => $intree,
 		'-as_project' => 1,
 	);
 
 	# fetch tree from project
 	my ($tree) = @{ $project->get_items(_TREE_) };
-
-	# relabel terminal nodes
-	my ( @prune, %seen );
-	for my $tip ( @{ $tree->get_terminals } ) {
-		my $name = $tip->get_name;
-		$name =~ s/P\d+$//;
-		if ( $lookup{$name} ) {
-			$tip->set_name($lookup{$name} . '.' . ++$seen{$name});
+	
+	# prune outlying terminal branch lengths
+	my $test = 1;
+	while( $test ) {
+		my $stat = Statistics::Descriptive::Sparse->new;
+		my @tips = @{ $tree->get_terminals };
+		for my $tip ( @tips ) {
+			$stat->add_data($tip->get_branch_length);
 		}
-		else {
-			$log->error("no mapping for prefix $name - will prune (!!!)");
-			push @prune, $tip;
+		my $stdev = $stat->standard_deviation;
+		my $mean  = $stat->mean;
+		my @prune;
+		for my $tip ( @tips ) {
+			my $l = $tip->get_branch_length;
+			if ( $l > ( $mean + $stdev * $dev ) or $l < ( $mean - $stdev * $dev ) ) {
+				$log->warn("outlier: " . $tip->get_name);
+				push @prune, $tip;
+			}
 		}
+		$tree->prune_tips(\@prune);
+		$test = scalar(@prune);
 	}
-	$tree->prune_tips(\@prune);
+	
 	return $project, $tree;
 }
 
@@ -116,60 +120,48 @@ sub read_data {
 sub get_fossil_files {
 	my $tree = shift;
 	my @files;
-	{
-		my %seen;
-		$tree->visit_depth_first(
-			'-pre' => sub {
-				my $node = shift;
-				my $name = $node->get_name;
-				my $file = "${fcdir}/${name}.yml";
-				if ( $node->is_internal ) {
+	$log->info("going to fetch fossils from web service");
+	$tree->visit_depth_first(
+		'-pre' => sub {
+			my $node = shift;
+			my $name = $node->get_name;
+			my $file = "${fcdir}/${name}.yml";
+			if ( $node->is_internal ) {
 
-					# store fossil file name for later
-					push @files, $file;
+				# store fossil file name for later
+				push @files, $file;
+	
+				# not yet processed this taxon, either during
+				# this traversal or during a previous run			
+				if ( ! -e $file ) {
 		
-					# already processed this taxon, either during
-					# this traversal or during a previous run			
-					if ( -e $file ) {
-						$log->info("already fetched fossils for $name");
-					}
-					else {
-			
-			
-						# fetch fossils
-						$log->info("fetching fossils for $name");
-						my @records = $cs->fetch_fossil_dates( $name );
-						if ( scalar @records ) {
-							open my $fh, '>', $file or die $!;
-							binmode( $fh, ':utf8' );
-							print $fh Dump(\@records);
-							close $fh;
-						}
-						else {
-							$log->info("no fossils for $name");
-							pop @files;
-						}
-					}
-					
-					# remove nested identical node label
-					if ( $seen{$name}++ ) {
-						$log->warn("already seen $name in ancestor");
-						$node->set_name('');
-					}					
+					# fetch fossils
+					$log->info("fetching fossils for $name");
+					my @records = $cs->fetch_fossil_dates( $name );
+					open my $fh, '>', $file or die $!;
+					binmode( $fh, ':utf8' ); # wide characters otherwise
+					print $fh Dump(\@records);
 				}
+				else {
+					$log->debug("already fetched fossils for $name");
+				}					
 			}
-		);
-	}
+		}
+	);
 	return @files;
 }
 
 # read fossils from file. XXX should test topology. doesn't, yet.
 sub get_fossils {
 	my @files = @_;
+	
+	# read distinct fossils from files. let's assume that
+	# the same file can occur multiple times in the list,
+	# and the same fossil can occur multiple times among files.
 	my ( @fossils, %seen );
+	$log->info("going to read fossil files");
 	for my $file ( @files ) {
-		next if $seen{$file}++;
-		$log->info("going to read fossils in $file");
+		next if $seen{$file}++;		
 		open my $fh, '<', $file or die $!;
 		my @set = @{ Load( do { local $/; <$fh> } ) };
 		for my $f ( @set ) {
@@ -184,28 +176,71 @@ sub get_fossils {
 	# now we ditch fossils that don't map, and we ditch
 	# node names that have no fossil
 	$log->info("going to map fossils to tree");
-	my %node_by_name = map { $_->get_name => $_ } @{ $tree->get_internals };
+	my %node_by_name;
+	for my $node ( @{ $tree->get_internals } ) {
+		if ( my $name = $node->get_name ) {
+		
+			# if nhx:D (duplication event) is N ("No", though
+			# NHX actually specifies "F", false), it's
+			# a speciation event, which we can calibrate
+			my $nhx_D = $node->get_meta_object('nhx:D');
+			if ( $nhx_D eq 'N' ) {
+				$node_by_name{$name} = [] if not $node_by_name{$name};
+				push @{ $node_by_name{$name} }, $node;
+				$log->debug("added speciation node $name");
+			}
+			else {
+				$log->debug("found duplication node (nhx:D=$nhx_D) for $name");
+			}
+		}
+	}
+	
+	# here we must map the same fossil to all speciation 
+	# events (in different gene copies) that it corresponds with
 	my @cleaned_fossils;
-	for my $f ( @fossils ) {
+	FOSSIL: for my $f ( @fossils ) {
 		my $name = $f->calibrated_taxon;
-		if ( my $node = $node_by_name{$name} ) {
-			push @cleaned_fossils, $f;
-			delete $node_by_name{$name};
+		
+		# FIXME: if it's a stem fossil we actually should 
+		# apply a calibration to the parent. But if that's
+		# a duplication event we'd have to traverse deeper
+		# and it'll all get a bit messy. Skip for now.
+		if ( $f->crown_vs_stem ne 'crown' ) {
+			$log->warn("Fossil '$name' is not a crown fossil, skipping");
+			next FOSSIL;
+		}
+		
+		# We have a crown fossil, and one or more speciation
+		# nodes that correspond with it.
+		if ( my $nodes = $node_by_name{$name} ) {
+		
+			# add distinct suffix to each instance, both
+			# in tree and on clones of the fossil
+			my $i = 1;
+			for my $node ( @{ $nodes } ) {
+				my $instance = $name . '_' . $i++;
+				$node->set_name($instance);
+				my $clone = Load(Dump($f));
+				$clone->calibrated_taxon($instance);
+				push @cleaned_fossils, $clone;
+			}
 			$log->info("successfully mapped fossil $name");
 		}
 		else {
-			$log->warn("couldn't map fossil $name");
+			$log->debug("couldn't map fossil $name");
 		}
 	}
-	$_->set_name('') for values %node_by_name;
 	return @cleaned_fossils;
 }
 
 # run r8s
 sub run_r8s {
 	my ($project,$nchar,@fossils) = @_;
-	my ( $fh, $filename ) = tempfile();
+	
+	# first write to memory (so we can log), 
+	# then to a temporary file
 	my $r8s_commands;
+	my ( $fh, $filename ) = tempfile();	
 	my $tmpl = Template->new;
 	my $date = localtime();
 	$tmpl->process(
@@ -221,106 +256,44 @@ sub run_r8s {
 	);
 	$log->debug("\n".$r8s_commands."\n");
 	print $fh $r8s_commands;
-	$log->info("going to run r8s, this may take a while");
-	my $result = `$exe -b -f $filename`;
+	
+	# capture output for parsing later
+	$log->info("going to run r8s, this may take a while. watch log: $filename.log");
+	system("$exe -b -f $filename > $filename.log");
+	open my $fh, '<', "$filename.log";
+	my $result = do { local $/; <$fh> };
+	unlink $filename, "$filename.log";
 	$log->debug("\n".$result."\n");
 	return $result;
 }
 
 sub parse_result {
 	my $result = shift;
-	my $passed;
+	my ( $passed, $was_rato );
 	LINE: for my $line ( split /\n/, $result ) {
 	
 		# check if we passed, set flag
 		if ( $line =~ /^\s*PASSED\s*$/ ) {
-			$log->info("analysis passed OK - reading ratogram");
+			$log->info("analysis passed OK - reading trees");
 			$passed++;
 		}
 		
-		# if we have a passed flag and a tree description, it's the ratogram
+		# if we have a passed flag and a tree description, 
+		# it's first the ratogram, then the chronogram
 		if ( $passed and $line =~ /tree Tree\d+ = (\(.+;)/ ) {
-			my $ratogram = $1;
+			my $tree = $1;
+			my $type = $was_rato ? 'chronogram' : 'ratogram';
 			
 			# write to file
 			my $outfile = $intree;
 			$outfile =~ s/.+\///;
-			$outfile = $ratodir . '/' . $outfile;
+			$outfile = join '', $ratodir, '/', $outfile, '.', $type;
 			open my $fh, '>', $outfile or die $!;
-			print $fh $ratogram;
-			$log->info("ratogram written to $outfile");
+			print $fh $tree;
+			$log->info("$type written to $outfile");
+			$was_rato++;
 		}
 	}
 	$log->error("*** analysis failure in $intree") if not $passed;
 }
 
-__DATA__
-ENSAME	Ailuropoda melanoleuca
-ENSAPL	Anas platyrhynchos
-ENSACA	Anolis carolinensis
-ENSAMX	Astyanax mexicanus
-ENSBTA	Bos taurus
-ENSCEL	Caenorhabditis elegans
-ENSCJA	Callithrix jacchus
-ENSCAF	Canis lupus familiaris
-ENSCPO	Cavia porcellus
-ENSCSA	Chlorocebus sabaeus
-ENSCHO	Choloepus hoffmanni
-ENSCIN	Ciona intestinalis
-ENSCSAV	Ciona savignyi
-ENSDAR	Danio rerio
-ENSDNO	Dasypus novemcinctus
-ENSDOR	Dipodomys ordii
-FB	Drosophila melanogaster
-ENSETE	Echinops telfairi
-ENSECA	Equus caballus
-ENSEEU	Erinaceus europaeus
-ENSFCA	Felis catus
-ENSFAL	Ficedula albicollis
-ENSGMO	Gadus morhua
-ENSGAL	Gallus gallus
-ENSGAC	Gasterosteus aculeatus
-ENSGGO	Gorilla gorilla gorilla
-ENS	Homo sapiens
-ENSSTO	Ictidomys tridecemlineatus
-ENSLAC	Latimeria chalumnae
-ENSLOC	Lepisosteus oculatus
-ENSLAF	Loxodonta africana
-ENSMMU	Macaca mulatta
-ENSMEU	Macropus eugenii
-ENSMGA	Meleagris gallopavo
-ENSMIC	Microcebus murinus
-ENSMOD	Monodelphis domestica
-ENSMUS	Mus musculus
-ENSMPU	Mustela putorius furo
-ENSMLU	Myotis lucifugus
-ENSNLE	Nomascus leucogenys
-ENSOPR	Ochotona princeps
-ENSONI	Oreochromis niloticus
-ENSOAN	Ornithorhynchus anatinus
-ENSOCU	Oryctolagus cuniculus
-ENSORL	Oryzias latipes
-ENSOGA	Otolemur garnettii
-ENSOAR	Ovis aries
-ENSPTR	Pan troglodytes
-ENSPAN	Papio anubis
-ENSPSI	Pelodiscus sinensis
-ENSPMA	Petromyzon marinus
-ENSPFO	Poecilia formosa
-ENSPPY	Pongo abelii
-ENSPCA	Procavia capensis
-ENSPVA	Pteropus vampyrus
-ENSRNO	Rattus norvegicus
-ENSSCE	Saccharomyces cerevisiae
-ENSSHA	Sarcophilus harrisii
-ENSSAR	Sorex araneus
-ENSSSC	Sus scrofa
-ENSTGU	Taeniopygia guttata
-ENSTRU	Takifugu rubripes
-ENSTSY	Tarsius syrichta
-ENSTNI	Tetraodon nigroviridis
-ENSTBE	Tupaia belangeri
-ENSTTR	Tursiops truncatus
-ENSVPA	Vicugna pacos
-ENSXET	Xenopus tropicalis
-ENSXMA	Xiphophorus maculatus
