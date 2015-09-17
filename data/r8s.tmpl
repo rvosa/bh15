@@ -7,6 +7,7 @@ BEGIN r8s;
 	constrain taxon=[% f.calibrated_taxon %] min_age=[% f.min_age %] max_age=[% f.max_age %];
 	[%= END %]
 	set smoothing=100;
-	divtime method=pl;
+	divtime method=pl; [ crossv=yes; ]
 	describe plot=rato_description;
+	describe plot=chrono_description;
 END;
