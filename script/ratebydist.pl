@@ -1,4 +1,47 @@
 #!/usr/bin/perl
+package Arg;
+use strict;
+use warnings;
+use Carp;
+our $AUTOLOAD;
+
+sub new {
+	my ( $package, %args ) = @_;
+	my $self = {
+		'chrono' => undef, # dup node in chronogram, will traverse
+		'rato'   => undef, # idem in ratogram
+		'phylo'  => undef, # idem in phylogram
+		'taxon'  => undef, # static
+		'dist'   => undef, # static
+		'hash'   => undef, # static
+		'ntips'  => undef, # computed in first iteration
+		'height' => undef, # computed in first iteration	
+		'pdist'  => undef, # phylogram distance
+	};
+	bless $self, $package;
+	for my $key ( keys %args ) {
+		$self->$key( $args{$key} );
+	}
+	return $self;
+}
+
+sub AUTOLOAD {
+	my ( $self, $arg ) = @_;
+	my $field = $AUTOLOAD;
+	$field =~ s/.+://;
+	return if $field =~ /^[A-Z]+$/;
+	if ( exists $self->{$field} ) {
+		if ( defined $arg ) {
+			$self->{$field} = $arg;
+		}
+		return $self->{$field};
+	}
+	else {
+		croak "No field $field!";
+	}
+}
+
+package main;
 use strict;
 use warnings;
 use Getopt::Long;
@@ -52,56 +95,61 @@ $log->info("tree family ID: $TFID");
 print "treefam\ttaxon\tdistance\trate\thash\tntips\theight\n";
 for my $hash ( keys %$map ) {
 	my ( $cn, $rn, $pn ) = @{ $map->{$hash} };
-	traverse( 
+	my $arg = Arg->new(
 		'chrono' => $cn, # dup node in chronogram, will traverse
 		'rato'   => $rn, # idem in ratogram
 		'phylo'  => $pn, # idem in phylogram
 		'taxon'  => $cn->get_name, # static
 		'dist'   => $cn->get_generic('dist'), # static
 		'hash'   => $hash, # static
-		'ntips'  => undef, # computed in first iteration
-		'height' => undef, # computed in first iteration
+		'pdist'  => $pn->get_generic('dist'),
 	);
+	traverse( $arg );
 }
 
 sub traverse {
-	my %args = @_;
-	my @cc = @{ $args{'chrono'}->get_children };
-	my @rc = @{ $args{'rato'}->get_children };
-	my @pc = @{ $args{'phylo'}->get_children };
+	my ( $s, $ntips, $height ) = @_;
+	my @cc = @{ $s->chrono->get_children };
+	my @rc = @{ $s->rato->get_children };
+	my @pc = @{ $s->phylo->get_children };
 	for my $i ( 0 .. $#cc ) {
-		@args{'chrono', 'rato', 'phylo'} = ( $cc[$i], $rc[$i], $pc[$i] );
-	
-		# stop traversing when reaching another duplication node
-		return if $args{'chrono'}->get_name and $args{'chrono'}->get_name !~ /_\d+$/;	
+		$s->chrono( $cc[$i] );
+		$s->rato(   $rc[$i] );
+		$s->phylo(  $pc[$i] );
+		my ( $first_ntips, $first_height );
 	
 		# compute number of tips first time, then keep carrying over
-		if ( not $args{'tips'} ) {
-			$args{'ntips'} = scalar @{ $args{'chrono'}->get_generic('tips') };
+		if ( not defined $ntips ) {
+			$first_ntips = scalar @{ $s->chrono->get_generic('tips') };
+			$log->info($s->taxon . ' => ' . $first_ntips);
 		}	
 		
 		# compute average tip height first time, then keep carrying over
-		if ( not $args{'height'} ) {
-			my @heights = map { $_->get_generic('dist') } @{ $args{'phylo'}->get_terminals };
-			$args{'height'} = sum(@heights) / scalar(@heights);
-			$args{'height'} -= $args{'phylo'}->get_generic('dist');
+		if ( not defined $height ) {
+			my @heights = map { $_->get_generic('dist') } @{ $s->phylo->get_terminals };
+			$first_height = ( sum(@heights) / scalar(@heights) ) - $s->pdist;
 		}
 		
-		# compute and print rate by dist
-		my $dist = $args{'chrono'}->get_generic('dist') - $args{'dist'};
-		my $rate = $args{'rato'}->get_branch_length;
+		# compute distance from dup node and rate on focal branch
+		my $dist = $s->chrono->get_generic('dist') - $s->dist;
+		my $rate = $s->rato->get_branch_length;
+		
+		# print record
 		print join("\t",
-			$TFID,           # GLOBAL: treefam family id (stem of input files)
-			$args{'taxon'},  # STATIC: taxon label on duplication node
-			$dist,           # VAR: distance (MYA) of focal node to duplication node
-			$rate,           # VAR: substitution rate on the focal branch
-			$args{'hash'},   # STATIC: dup node identifier (MD5 of sorted tip labels)
-			$args{'ntips'},  # STATIC: number of tips subtended by children of dup node
-			$args{'height'}, # STATIC: average tip height subtended by children of dup node
+			$TFID,      # GLOBAL: treefam family id (stem of input files)
+			$s->taxon,  # STATIC: taxon label on duplication node
+			$dist,      # VAR: distance (MYA) of focal node to duplication node
+			$rate,      # VAR: substitution rate on the focal branch
+			$s->hash,   # STATIC: dup node identifier (MD5 of sorted tip labels)
+			$ntips  || $first_ntips,  # STATIC: number of tips subtended by children of dup node
+			$height || $first_height, # STATIC: average tip height subtended by children of dup node
 		), "\n";
 		
+		# stop traversing when reaching another duplication node
+		return if $s->chrono->get_name and $s->chrono->get_name !~ /_\d+$/;	
+				
 		# traverse deeper
-		traverse( %args );
+		traverse( $s, $ntips, $height );
 	}
 }
 
