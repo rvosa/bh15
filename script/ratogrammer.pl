@@ -260,16 +260,18 @@ sub run_r8s {
 	# capture output for parsing later
 	$log->info("going to run r8s, this may take a while. watch log: $filename.log");
 	system("$exe -b -f $filename > $filename.log");
-	open my $fh, '<', "$filename.log";
-	my $result = do { local $/; <$fh> };
+	open my $infh, '<', "$filename.log";
+	my $result = do { local $/; <$infh> };
 	unlink $filename, "$filename.log";
 	$log->debug("\n".$result."\n");
 	return $result;
 }
 
 sub parse_result {
-	my $result = shift;
-	my ( $passed, $was_rato );
+	my $result  = shift;
+	my $counter = 0;
+	my $passed;
+	my @type = qw(ratogram chronogram phylogram);
 	LINE: for my $line ( split /\n/, $result ) {
 	
 		# check if we passed, set flag
@@ -282,7 +284,7 @@ sub parse_result {
 		# it's first the ratogram, then the chronogram
 		if ( $passed and $line =~ /tree Tree\d+ = (\(.+;)/ ) {
 			my $tree = $1;
-			my $type = $was_rato ? 'chronogram' : 'ratogram';
+			my $type = $type[$counter];
 			
 			# write to file
 			my $outfile = $intree;
@@ -291,7 +293,7 @@ sub parse_result {
 			open my $fh, '>', $outfile or die $!;
 			print $fh $tree;
 			$log->info("$type written to $outfile");
-			$was_rato++;
+			$counter++;
 		}
 	}
 	$log->error("*** analysis failure in $intree") if not $passed;
