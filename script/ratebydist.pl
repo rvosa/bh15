@@ -5,10 +5,14 @@ use warnings;
 use Carp;
 our $AUTOLOAD;
 
+# This package is a simple encapsulation of arguments, with the fields listed
+# below in the constructor. The purpose of this is to avoid the risk of typos
+# in hash keys, otherwise all logic is contained in the 'main' package below.
+
 sub new {
 	my ( $package, %args ) = @_;
 	my $self = {
-		'chrono' => undef, # dup node in chronogram, will traverse
+		'chrono' => undef, # dup node object in chronogram, will traverse
 		'rato'   => undef, # idem in ratogram
 		'phylo'  => undef, # idem in phylogram
 		'taxon'  => undef, # static
@@ -50,6 +54,25 @@ use List::Util 'sum';
 use Digest::MD5 'md5_base64';
 use Bio::Phylo::IO 'parse_tree';
 use Bio::Phylo::Util::Logger ':levels';
+
+# Given a chronogram (i.e. branch lengths proportional to evolutionary time), a
+# ratogram (branch lengths proportional to smoothed substitution rate) and a 
+# phylogram (branch lengths proportional to change), this script does the following:
+# 1. parse the input trees, ladderize all three topologies in the same order.
+# 2. index the trees: i) pre-compute distance from the root, ii) tag nodes with an
+#    MD5 hash comprised of the alphabetically sorted tip labels subtended by the
+#    focal node iii) in the case that the focal node is a gene duplication instead
+#    of a speciation, collect the equivalent nodes across the three trees.
+# 3. for each set of equivalent nodes, recurse them in parallel towards the tips,
+#    write out a row of data for the following columns:
+#
+# - TreeFam ID for the focal gene family
+# - taxon in which we are traversing
+# - time in myr since the duplication event where we started tracing ("start node")
+# - substitution rate on the focal branch
+# - MD5 hash of the "start node"
+# - number of tips subtended by the "start node"
+# - average phylogram height of the tips subtended by the "start node"
 
 # process command line arguments
 my $chronogram;
@@ -107,6 +130,7 @@ for my $hash ( keys %$map ) {
 	traverse( $arg );
 }
 
+# $s = Arg object
 sub traverse {
 	my ( $s, $ntips, $height ) = @_;
 	my @cc = @{ $s->chrono->get_children };
