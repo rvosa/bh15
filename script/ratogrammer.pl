@@ -12,6 +12,28 @@ use Bio::Phylo::Util::Logger ':levels';
 use Bio::Phylo::Util::CONSTANT ':objecttypes';
 use Bio::Phylo::PhyLoTA::Service::CalibrationService;
 
+# This script calibrates gene trees using r8s and calibration points from
+# FossilCalibrations.org. The steps are roughly as follows:
+# 1. check to see if there is a FASTA alignment that corresponds with the
+#    tree. If yes, compute the number of sites in the alignment. Otherwise
+#    the analysis cannot continue and the script consequently quits.
+# 2. parse the input tree. In this step, outlying terminal branches are
+#    that are more than 8 standard deviations from the mean are pruned.
+#    This is a conservative measure intended to avoid pathologies in the 
+#    rate smoothing step.
+# 3. traverse the internal nodes and fetch fossil calibrations for them,
+#    by accessing cached files and by querying the FossilCalibrations.org
+#    web service.
+# 4. apply the fossil calibrations to the internal nodes. The main challenge
+#    here is that TreeFam is a it promiscuous in how it labels internal nodes:
+#    sometimes, multiple, nested nodes are given the same label. Logically, 
+#    this means that we should pick the deepest (nearest to the root) of 
+#    these. The second challenge/assumption is that we apply the same fossil
+#    to the appropriate speciation event in all paralogous copies.
+# 5. run r8s. This uses the r8s.tmpl file to set up the commands block for
+#    the analysis. Once the analysis is done, the ratogram is parsed out of
+#    the log and written to an output directory.
+
 # process command line arguments
 my $fcdir;            # directory for cached calibrations
 my $intree;           # input tree
