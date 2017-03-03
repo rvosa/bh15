@@ -31,8 +31,8 @@ use Bio::Phylo::PhyLoTA::Service::CalibrationService;
 #    these. The second challenge/assumption is that we apply the same fossil
 #    to the appropriate speciation event in all paralogous copies.
 # 5. run r8s. This uses the r8s.tmpl file to set up the commands block for
-#    the analysis. Once the analysis is done, the ratogram is parsed out of
-#    the log and written to an output directory.
+#    the analysis. Once the analysis is done, the ratogram, phylogram and 
+#    chronogram are parsed out of the log and written to an output directory.
 
 # process command line arguments
 my $fcdir;            # directory for cached calibrations
