@@ -7,6 +7,13 @@ use Bio::Phylo::IO qw'parse_tree unparse';
 use Bio::Phylo::Util::Logger ':levels';
 use Bio::Phylo::Util::CONSTANT ':namespaces';
 
+# Given a TAR archive that contains the TreeFam dump ($infile), and a directory
+# to write to ($treefam), this script does the following:
+# 1. only process New Hampshire eXtended and FASTA files in the TAR archive
+# 2. remap accession numbers to taxon names in the NHX tree 
+# 3. write the remapped tree and the FASTA file to the $treefam directory
+# I.e., this script does simple data conversion.
+
 # process command line arguments
 my $infile;
 my $treefam;
